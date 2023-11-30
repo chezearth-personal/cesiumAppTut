@@ -4,7 +4,8 @@
   "description": "Test project that will include Typescript and React with Cesium",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "node_modules/.bin/webpack --config webpack.config.js"
   },
   "keywords": [
     "cesium",
@@ -15,6 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
     "url-loader": "^4.1.1",
     "webpack": "^5.89.0"
