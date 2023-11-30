@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  mode: 'development',
   context: __dirname,
   entry: {
     app: './src/index.js'
@@ -25,5 +26,12 @@ module.exports = {
       template: 'src/index.html'
     })
   ],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist')
+    },
+    compress: true,
+    port: 4000
+  }
 };
 
