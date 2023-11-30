@@ -1,0 +1,16 @@
+{
+  "name": "cesiumapptut",
+  "version": "1.0.0",
+  "description": "Test project that will include Typescript and React with Cesium",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "cesium",
+    "react",
+    "typescript"
+  ],
+  "author": "Charles Rethman",
+  "license": "MIT"
+}
